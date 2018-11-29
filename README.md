@@ -1,4 +1,4 @@
-# Web Scraping - Página para consulta puntaje SISBEN (Sistema de Selección de Beneficiarios Para Programas Sociales)
+# Web Scraping - Página para consultar puntaje SISBEN (Sistema de Selección de Beneficiarios Para Programas Sociales)
 
 Sitio original: https://www.sisben.gov.co/atencion-al-ciudadano/Paginas/consulta-del-puntaje.aspx
 
@@ -7,7 +7,7 @@ Resultado del proceso (web scraping): https://sisben-webscraping.azurewebsites.n
 ```sh
   xxx/sisben?identification=45485519&type=1
 
-  indentification = Documento de la persona
+  identification = Documento de la persona
   type = Tipo de Identificación
     [1] Cédula de Ciudadanía
     [2] Tarjeta de Identidad
