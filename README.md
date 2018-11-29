@@ -4,6 +4,18 @@ Sitio original: https://www.sisben.gov.co/atencion-al-ciudadano/Paginas/consulta
 
 Resultado del proceso (web scraping): https://sisben-webscraping.azurewebsites.net/sisben?identification=45485519&type=1
 
+```sh
+  xxx/sisben?identification=45485519&type=1
+
+  indentification = Documento de la persona
+  type = Tipo de Identificación
+    [1] Cédula de Ciudadanía
+    [2] Tarjeta de Identidad
+    [3] Documento de Ciudadano Extranjero
+    [4] Registro Civil
+    [8] Permiso Especial de Permanencia
+```
+
 [![Build Status](https://travis-ci.org/jmbl1685/sisben-webscraping.svg?branch=master)](https://travis-ci.org/jmbl1685/sisben-webscraping/builds)
 
 ## Web Scraping
