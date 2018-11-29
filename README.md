@@ -2,7 +2,7 @@
 
 Sitio original: https://www.sisben.gov.co/atencion-al-ciudadano/Paginas/consulta-del-puntaje.aspx
 
-Resultado del proceso (web scraping): xxx
+Resultado del proceso (web scraping): https://sisben-webscraping.azurewebsites.net/sisben?identification=45485519&type=1
 
 [![Build Status](https://travis-ci.org/jmbl1685/sisben-webscraping.svg?branch=master)](https://travis-ci.org/jmbl1685/sisben-webscraping/builds)
 
