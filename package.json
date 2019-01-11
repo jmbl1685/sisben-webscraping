@@ -5,10 +5,10 @@
   "description": "Web scraping realizado al sitio de consulta del SISBEN",
   "main": "server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "deploy": "now && now alias",
-    "test": "mocha src/test/sisben.test.js --exec --exit"
+    "test": "mocha test/sisben.test.js --exec --exit"
   },
   "engines": {
     "node": "8.11.1"
