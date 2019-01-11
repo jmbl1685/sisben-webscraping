@@ -1,21 +1,19 @@
-'use strict'
+"use strict";
 
-const express = require('express')
-const cors = require('cors')
-const app = express()
-const sisbenController = require('./controllers/sisben.controller')
+const express = require("express");
+const cors = require("cors");
+const app = express();
+const { SisbenWebScrapingHandle } = require("./controllers/sisben.controller");
 
-require('dotenv').config()
+require("dotenv").config();
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(cors());
 
-app.use(express.urlencoded({ extended: false }))
-app.use(express.json())
-app.use(cors())
-app.set('port', process.env.PORT)
-app.get('/sisben', sisbenController.SisbenWebScrapingHandle)
+app.get("/sisben", SisbenWebScrapingHandle);
 
-app.listen(app.get('port'), () => {
-  console.log('Server running')
-})
+app.listen(process.env.PORT, () => {
+  console.log("Server running");
+});
 
-module.exports = app
-
+module.exports = app;
