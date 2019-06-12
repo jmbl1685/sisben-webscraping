@@ -75,7 +75,6 @@ async function getUserInfo(htmlResponse) {
 
         let infoResponse = { data: 'User not found' };
 
-        console.log(doc.children());
         if (
           !(
             validation.NotResult ||

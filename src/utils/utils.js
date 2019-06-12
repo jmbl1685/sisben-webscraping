@@ -3,8 +3,9 @@ const sisbenScoreHandler = scoreText => parseFloat(scoreText.replace(',', '.'));
 const convertToNumber = text => parseInt(text);
 
 const userNameHandler = (name, lastname) => {
-  const fullname = `${name} ${lastname}`.toLocaleLowerCase();
+  const fullname = `${name} ${lastname}`;
   return fullname
+    .replace(/\s+/g, ' ')
     .toLowerCase()
     .split(' ')
     .map(word => {
