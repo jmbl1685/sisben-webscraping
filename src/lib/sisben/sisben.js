@@ -92,7 +92,7 @@ async function getUserInfo(htmlResponse) {
             identification: doc.find('#labelNumeroDocumento').text(),
             score: sisbenScoreHandler(doc.find('#labelpuntajeIII').text()),
             area: doc.find('#labelArea').text(),
-            departament: doc.find('#labelNombreDepartamento').text(),
+            department: doc.find('#labelNombreDepartamento').text(),
             municipalityCode: convertToNumber(
               doc.find('#labelCodigoMunicipio').text(),
             ),
