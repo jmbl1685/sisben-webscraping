@@ -5,13 +5,14 @@
   "description": "Web scraping realizado al sitio de consulta del SISBEN",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "lint": "prettier --write src/**/*.*",
     "deploy": "now && now alias",
     "test": "mocha test/sisben.test.js --exec --exit"
   },
   "engines": {
-    "node": "8.11.1"
+    "node": "8.10.0"
   },
   "keywords": [
     "web scraping",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "prettier": "^1.16.4"
   }
 }

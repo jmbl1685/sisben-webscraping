@@ -5,12 +5,12 @@
   "routes": [
     {
       "src": "/.*",
-      "dest": "server.js"
+      "dest": "src/app.js"
     }
   ],
   "builds": [
     {
-      "src": "server.js",
+      "src": "src/app.js",
       "use": "@now/node-server"
     }
   ]
